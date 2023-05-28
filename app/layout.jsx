@@ -13,9 +13,16 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-      <Navigation/>
-      {children}
+    <head>
+      <link rel='stylesheet' href='https://bootswatch.com/5/flatly/bootstrap.min.css' />
+      
+    </head>
+    {/* className={inter.className} */}
+      <body>
+          <Navigation/>
+          <div className='container p-4'>
+            {children}
+          </div>
       </body>
     </html>
   )

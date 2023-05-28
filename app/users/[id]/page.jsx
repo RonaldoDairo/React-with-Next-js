@@ -8,7 +8,7 @@ async function getUser(id) {
 const UserPage = async( {params} ) => {
    
     const user = await getUser(params.id)
-    console.log(user,"data")
+
     
     return (
         <div className="row">
